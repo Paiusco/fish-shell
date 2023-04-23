@@ -126,7 +126,7 @@ msgstr "Pausa a execução e inicia o prompt de debug"
 
 #: src/builtin.cpp:366
 msgid "Run a builtin specifically"
-msgstr ""
+msgstr "Executa um builtin específico"
 
 #: src/builtin.cpp:367
 msgid "Block of code to run conditionally"
@@ -594,16 +594,16 @@ msgstr "'end' não pode ter argumentos. Você esqueceu o ';'?"
 
 #: src/parse_util.cpp:44
 msgid "The 'time' command may only be at the beginning of a pipeline"
-msgstr ""
+msgstr "O comando 'time' só pode estar no inicio de uma pipeline"
 
 #: src/parse_util.cpp:1181
 msgid "$status is not valid as a command. See `help conditions`"
-msgstr ""
+msgstr "$status não é um comando. Veja `help conditions`"
 
 #: src/parser.cpp:174
 #, c-format
 msgid "Could not write profiling information to file '%s'"
-msgstr ""
+msgstr "Não pode escrever informação de profiling no arquivo '%s'"
 
 #: src/parser.cpp:176
 msgid "Time\tSum\tCommand\n"
@@ -612,12 +612,12 @@ msgstr "Tempo\tSoma\tComando\n"
 #: src/parser.cpp:228
 #, c-format
 msgid "in function '%ls'"
-msgstr ""
+msgstr "na função '%ls'"
 
 #: src/parser.cpp:243
 #, c-format
 msgid " with arguments '%ls'"
-msgstr ""
+msgstr " com argumentos '%ls'"
 
 #: src/parser.cpp:250
 msgid "in command substitution\n"
@@ -668,39 +668,39 @@ msgstr "%ls: "
 #: src/path.cpp:291
 #, c-format
 msgid "Unable to locate the %ls directory."
-msgstr ""
+msgstr "Não foi possível localizar o diretório %ls"
 
 #: src/path.cpp:293
 #, c-format
 msgid "Please set the %ls or HOME environment variable before starting fish."
-msgstr ""
+msgstr "Por favor, defina o %ls ou a variável de ambiente HOME antes de iniciar o fish"
 
 #: src/path.cpp:297
 #, c-format
 msgid "Unable to locate %ls directory derived from $%ls: '%ls'."
-msgstr ""
+msgstr "Não foi possível localizar o diretório %ls derivado de $%ls: '%ls'."
 
 #: src/path.cpp:299
 #, c-format
 msgid "The error was '%s'."
-msgstr ""
+msgstr "O erro foi '%s'."
 
 #: src/path.cpp:300
 #, c-format
 msgid "Please set $%ls to a directory where you have write access."
-msgstr ""
+msgstr "Por favor define $%ls para um diretório que você tem permissão de escrita."
 
 #: src/path.cpp:388
 msgid "can not save history"
-msgstr ""
+msgstr "não pode salvar o histórico"
 
 #: src/path.cpp:397
 msgid "can not save universal variables or functions"
-msgstr ""
+msgstr "não pode salvar variavéis globais or funções"
 
 #: src/proc.cpp:210
 msgid "There are still jobs active:\n"
-msgstr ""
+msgstr "Ainda há jobs ativos:\n"
 
 #: src/proc.cpp:211
 msgid ""
@@ -710,18 +710,18 @@ msgstr ""
 
 #: src/proc.cpp:216
 msgid "A second attempt to exit will terminate them.\n"
-msgstr ""
+msgstr "A segunda tentativa de sair irá finalizá-los.\n"
 
 #: src/proc.cpp:217
 msgid ""
 "Use 'disown PID' to remove jobs from the list without terminating them.\n"
 msgstr ""
+"Use 'disown PID' para remover jobs da lista sem finalizá-los.\n"
 
 #: src/proc.cpp:915
 #, c-format
 msgid "Could not send job %d ('%ls') with pgid %d to foreground"
-msgstr ""
-"Não foi possível enviar a tarefa %d ('%ls') com pgid %d para primeiro plano"
+msgstr "Não foi possível enviar a tarefa %d ('%ls') com pgid %d para primeiro plano"
 
 #: src/proc.cpp:1033
 msgid "Could not return shell to foreground"
@@ -737,7 +737,7 @@ msgstr "Não foi possível preparar modo do terminal para shell"
 
 #: src/reader.cpp:1353
 msgid "Search again for more results"
-msgstr ""
+msgstr "Procure novamente para mais resultados"
 
 #: src/reader.cpp:2512
 msgid "No TTY for interactive shell (tcgetpgrp failed)"
@@ -747,18 +747,19 @@ msgstr "Não há TTY para shell interativo (falha em tcgetpgrp)"
 msgid ""
 "I appear to be an orphaned process, so I am quitting politely. My pid is "
 msgstr ""
+"Eu pareço ser um processo orfão, então estou finalizando educadamente. Mey pid é "
 
 #: src/reader.cpp:2564
 msgid "Failed to assign shell to its own process group"
-msgstr ""
+msgstr "Erro ao definir shell para seu próprio grupo de processo"
 
 #: src/reader.cpp:2575
 msgid "Failed to take control of the terminal"
-msgstr ""
+msgstr "Falha ao tomar controle do terminal"
 
 #: src/reader.cpp:2585
 msgid "Failed to set startup terminal mode!"
-msgstr ""
+msgstr "Falha ao setar o modo inicial do terminal!"
 
 #: src/reader.cpp:4551
 #, c-format
@@ -768,7 +769,7 @@ msgstr "Atalho desconhecido 0x%X"
 #: src/reader.cpp:4688 src/reader.cpp:4696 src/reader.cpp:4721
 #, c-format
 msgid "Unable to read input file: %s"
-msgstr ""
+msgstr "Não foi possível ler o arquivo de input: %s"
 
 #: src/signals.cpp:38
 msgid "Terminal hung up"
@@ -917,12 +918,12 @@ msgstr "Desconhecido"
 #: src/wutil.cpp:54
 #, c-format
 msgid "getcwd() failed with errno %d/%s"
-msgstr ""
+msgstr "getcwd() falhou com errno %d/%s"
 
 #: src/builtin.h:31
 #, c-format
 msgid "%ls: %ls: option requires an argument\n"
-msgstr ""
+msgstr "%ls: %ls: opção requer um argumento\n"
 
 #: src/builtin.h:35
 #, c-format
@@ -931,96 +932,99 @@ msgid ""
 "Documentation may not be installed.\n"
 "`help %ls` will "
 msgstr ""
+"fish: %ls: faltou uma página de manual\n"
+"Documentação talvez nã̀o esteja instalada.\n"
+"`help %ls` irá "
 
 #: src/builtin.h:39
 #, c-format
 msgid "%ls: invalid option combination\n"
-msgstr ""
+msgstr "%ls: combinação de opção inválida\n"
 
 #: src/builtin.h:42
 #, c-format
 msgid "%ls: invalid option combination, %ls\n"
-msgstr ""
+msgstr "%ls: combinação de opção inválida, %ls\n"
 
 #: src/builtin.h:43
 #, c-format
 msgid "%ls: %ls %ls: options cannot be used together\n"
-msgstr ""
+msgstr "%ls: %ls %ls: opções não podem ser usadas juntas"
 
 #: src/builtin.h:46
 #, c-format
 msgid "%ls: scope can be only one of: universal function global local\n"
-msgstr ""
+msgstr "%ls: escopo só pode ser um dos: universal função global local\n"
 
 #: src/builtin.h:49
 #, c-format
 msgid "%ls: cannot both export and unexport\n"
-msgstr ""
+msgstr "%ls: não pode export e unexport ao mesmo tempo"
 
 #: src/builtin.h:52
 #, c-format
 msgid "%ls: %ls: unknown option\n"
-msgstr ""
+msgstr "%ls: %ls: opção desconhecida"
 
 #: src/builtin.h:55
 #, c-format
 msgid "%ls: missing argument\n"
-msgstr ""
+msgstr "%ls: faltando argumento\n"
 
 #: src/builtin.h:56
 #, c-format
 msgid "%ls: expected %d arguments; got %d\n"
-msgstr ""
+msgstr "%ls: esperava %d argumentos; recebeu %d\n"
 
 #: src/builtin.h:57
 #, c-format
 msgid "%ls: %ls: expected %d arguments; got %d\n"
-msgstr ""
+msgstr "%ls: %ls: experava %d argumentos; recebeu %d\n"
 
 #: src/builtin.h:58
 #, c-format
 msgid "%ls: expected >= %d arguments; got %d\n"
-msgstr ""
+msgstr "%ls: esperava >= %d argumentos; recebeu %d\n"
 
 #: src/builtin.h:59
 #, c-format
 msgid "%ls: expected <= %d arguments; got %d\n"
-msgstr ""
+msgstr "%ls: esperava <= %d argumentos; recebeu %d\n"
 
 #: src/builtin.h:62
 #, c-format
 msgid "%ls: %ls: invalid variable name. See `help identifiers`\n"
-msgstr ""
+msgstr "%ls: %ls: nome de variável inválida. Veja `help identifiers`\n"
 
 #: src/builtin.h:65
 #, c-format
 msgid "%ls: %ls: invalid mode name. See `help identifiers`\n"
-msgstr ""
+msgstr "%ls: %ls: nome de modo inválido. Veja `help identifiers`\n"
 
 #: src/builtin.h:68
 #, c-format
 msgid "%ls: too many arguments\n"
-msgstr ""
+msgstr "%ls: mais argumentos do que esperado\n"
 
 #: src/builtin.h:71
 #, c-format
 msgid "%ls: %ls: invalid integer\n"
-msgstr ""
+msgstr "%ls: %ls: inteiro inválido\n"
 
 #: src/builtin.h:74
 #, c-format
 msgid "%ls: missing subcommand\n"
-msgstr ""
+msgstr "%ls: falta sub comando\n"
 
 #: src/builtin.h:75
 #, c-format
 msgid "%ls: %ls: invalid subcommand\n"
-msgstr ""
+msgstr "%ls: %ls: sub comando inválido\n"
 
 #: src/builtin.h:78
 #, c-format
 msgid "Send job %d (%ls) to foreground\n"
-msgstr ""
+msgstr "Envia job %d (%ls) para primeiro plano"
 
 #: src/fds.h:21
 msgid "An error occurred while setting up pipe"
@@ -1039,6 +1043,7 @@ msgid ""
 "The call stack limit has been exceeded. Do you have an accidental infinite "
 "loop?"
 msgstr ""
+"O limite de chamadas da stack excedeu. Você tem sem querer criou um loop inifnito?"
 
 #: src/parse_constants.h:146
 #, c-format
@@ -1058,7 +1063,7 @@ msgstr "Descritor de arquivo ilegal na redireção “%ls”"
 #: src/parse_constants.h:155
 #, c-format
 msgid "No matches for wildcard '%ls'. See `help wildcards-globbing`."
-msgstr ""
+msgstr "Nenhuma correspondencia para o wildcard '%ls'. Veja `help wildcards-globbing`."
 
 #: src/parse_constants.h:158
 msgid "'break' while not inside of loop"
@@ -1071,46 +1076,46 @@ msgstr "'continue' enquanto fora de um laço"
 #: src/parse_constants.h:166
 #, c-format
 msgid "$%lc is not a valid variable in fish."
-msgstr ""
+msgstr "$%lc não é uma variável válida no fish."
 
 #: src/parse_constants.h:169
 #, c-format
 msgid "Variables cannot be bracketed. In fish, please use {$%ls}."
-msgstr ""
+msgstr "Variáveis não podem ter colchetes. No fish, por favor use {$%ls}."
 
 #: src/parse_constants.h:173
 #, c-format
 msgid "Variables cannot be bracketed. In fish, please use \"$%ls\"."
-msgstr ""
+msgstr "Variáveis não podem ter colchetes. No fish, por favor use \"$%ls\"."
 
 #: src/parse_constants.h:176
 msgid "$? is not the exit status. In fish, please use $status."
-msgstr ""
+msgstr "$? não é o resultado do comando anterior. No fish, por favor use $status."
 
 #: src/parse_constants.h:179
 msgid "$$ is not the pid. In fish, please use $fish_pid."
-msgstr ""
+msgstr "$$ não é o pid. No fish, por favor use $fish_pid."
 
 #: src/parse_constants.h:182
 msgid "$# is not supported. In fish, please use 'count $argv'."
-msgstr ""
+msgstr "$# não é suportado. No fish, por favor use 'count $argv'."
 
 #: src/parse_constants.h:185
 msgid "$@ is not supported. In fish, please use $argv."
-msgstr ""
+msgstr "$@ não é suportado. No fish, por favor use $argv"
 
 #: src/parse_constants.h:188
 msgid "$* is not supported. In fish, please use $argv."
-msgstr ""
+msgstr "$* não é suportado. No fish, por favor use $argv."
 
 #: src/parse_constants.h:191
 msgid "Expected a variable name after this $."
-msgstr ""
+msgstr "Esperava um nome de variável depois deste $."
 
 #: src/parse_constants.h:195
 #, c-format
 msgid "Unsupported use of '='. In fish, please use 'set %ls %ls'."
-msgstr ""
+msgstr "Não suportado uso de '='. No fish, por favor use 'set %ls %ls'."
 
 #: src/parse_constants.h:199
 msgid ""
@@ -1122,6 +1127,7 @@ msgid ""
 "'{ ... }' is not supported for grouping commands. Please use 'begin; ...; "
 "end'"
 msgstr ""
+"'{ ... }' não é suportado para agrupar comandos. Por favor, use 'begin; ...; end'."
 
 #: src/parse_tree.h:58
 #, c-format
@@ -1130,23 +1136,23 @@ msgstr "O comand “%ls” não pode ser usado em pipe"
 
 #: src/wildcard.h:13
 msgid "command"
-msgstr ""
+msgstr "comando"
 
 #: src/wildcard.h:15
 msgid "command link"
-msgstr ""
+msgstr "link de comando"
 
 #: src/wildcard.h:17
 msgid "char device"
-msgstr ""
+msgstr "dispositivo de caractere"
 
 #: src/wildcard.h:19
 msgid "block device"
-msgstr ""
+msgstr "dispositivo de bloco"
 
 #: src/wildcard.h:21
 msgid "fifo"
-msgstr ""
+msgstr "fifo"
 
 #: src/wildcard.h:23
 msgid "file"
@@ -1154,122 +1160,123 @@ msgstr "arquivo"
 
 #: src/wildcard.h:25
 msgid "symlink"
-msgstr ""
+msgstr "link simbólico"
 
 #: src/wildcard.h:27
 msgid "dir symlink"
-msgstr ""
+msgstr "link simbólico de diretório"
 
 #: src/wildcard.h:29
 msgid "broken symlink"
-msgstr ""
+msgstr "link simbólico quebrado"
 
 #: src/wildcard.h:31
 msgid "symlink loop"
-msgstr ""
+msgstr "loop de link simbólico"
 
 #: src/wildcard.h:33
 msgid "socket"
-msgstr ""
+msgstr "socket"
 
 #: src/wildcard.h:35
 msgid "directory"
-msgstr ""
+msgstr "diretório"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/__fish_md5.fish:1
 #: /tmp/fish.2I4NT0/explicit/share/functions/__fish_md5.fish:2
-msgid "%s: Too many arguments %s\\n"
-msgstr ""
+msgid "%s: Too many arguments %s\n"
+msgstr "%s: Argumentos demais %s\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/__fish_print_help.fish:1
 msgid "Cannot format help; no parser found"
-msgstr ""
+msgstr "Não foi possível formatar ajuda; nenhum analisador encontrado"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/_validate_int.fish:1
-msgid "%s: Value '%s' for flag '%s' is not an integer\\n"
-msgstr ""
+msgid "%s: Value '%s' for flag '%s' is not an integer\n"
+msgstr "%s: O valor '%s' para a opção '%s' não é um inteiro\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/_validate_int.fish:2
-msgid "%s: Value '%s' for flag '%s' less than min allowed of '%s'\\n"
-msgstr ""
+msgid "%s: Value '%s' for flag '%s' less than min allowed of '%s'\n"
+msgstr "%s: O valor '%s' para a opção '%s' é menor do que o mínimo permitido de '%s'\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/_validate_int.fish:3
-msgid "%s: Value '%s' for flag '%s' greater than max allowed of '%s'\\n"
-msgstr ""
+msgid "%s: Value '%s' for flag '%s' greater than max allowed of '%s'\n"
+msgstr "%s: O valor '%s' para a opção '%s' é maior do que o máximo permitido de '%s'\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/alias.fish:1
-msgid "%s: name cannot be empty\\n"
-msgstr ""
+msgid "%s: name cannot be empty\n"
+msgstr "%s: o nome não pode estar vazio\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/alias.fish:2
-msgid "%s: body cannot be empty\\n"
-msgstr ""
+msgid "%s: body cannot be empty\n"
+msgstr "%s: o corpo não pode estar vazio\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/cd.fish:1
 msgid "Too many args for cd command"
-msgstr ""
+msgstr "Muitos argumentos para o comando cd"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/cdh.fish:1
 msgid "cdh: Expected zero or one arguments"
-msgstr ""
+msgstr "cdh: Esperava zero ou um argumento"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/cdh.fish:2
 msgid "No previous directories to select. You have to cd at least once."
-msgstr ""
+msgstr "Não há diretórios anteriores para selecionar. Você precisa executar o comando cd pelo menos uma vez."
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/cdh.fish:3
 msgid "This should not happen. Have you changed the cd function?"
-msgstr ""
+msgstr "Isso não deveria acontecer. Você modificou a função cd?"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/cdh.fish:4
 msgid "There are %s unique dirs in your history but I can only handle %s"
-msgstr ""
+msgstr "Existem %s diretórios únicos em seu histórico, mas eu só posso lidar com %s"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/cdh.fish:5
 msgid "Select directory by letter or number: "
-msgstr ""
+msgstr "Selecione um diretório por letra ou número: "
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/cdh.fish:6
 msgid ""
-"Error: expected a number between 1 and %d or letter in that range, got \"%s\""
+"Error: expected a number between 1 and %d or letter in that range, got "%s""
 msgstr ""
+"Erro: era esperado um número entre 1 e %d ou uma letra nesse intervalo, mas foi recebido "%s""
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/edit_command_buffer.fish:2
 msgid "Please set VISUAL or EDITOR to your preferred editor."
-msgstr ""
+msgstr "Por favor, defina VISUAL ou EDITOR para o seu editor preferido."
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/edit_command_buffer.fish:3
 msgid "Ignoring the output of your editor since its exit status was non-zero"
-msgstr ""
+msgstr "Ignorando a saída do seu editor já que o seu status de saída foi diferente de zero"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/edit_command_buffer.fish:4
 msgid "or the file was empty"
-msgstr ""
+msgstr "ou o arquivo estava vazio"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_add_path.fish:1
 msgid "Skipping non-existent path: %s\\n"
-msgstr ""
+msgstr "Pulando caminho inexistente: %s\\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_command_not_found.fish:1
 msgid "fish: Unknown command: %s\\n"
-msgstr ""
+msgstr "fish: Comando desconhecido: %s\\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_delta.fish:1
-msgid "%sNew%s: %s\\n"
-msgstr ""
+msgid "%sNew%s: %s\n"
+msgstr "%sNovo%s: %s\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_delta.fish:2
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_delta.fish:5
 msgid "%sChanged%s: %s\\n"
-msgstr ""
+msgstr "%sAlterado%s: %s\\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_delta.fish:3
 msgid "%sUnmodified%s: %s\\n"
-msgstr ""
+msgstr "%sNão modificado%s: %s\\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_delta.fish:4
 msgid "%sPossibly changed%s: %s\\n"
-msgstr ""
+msgstr "%sPossivelmente alterado%s: %s\\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_greeting.fish:1
 msgid "Welcome to fish, the friendly interactive shell"
@@ -1281,15 +1288,15 @@ msgstr "Digite %shelp%s para instruções sobre como utilizar o fish"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_greeting.fish:3
 msgid "fish is running in private mode, history will not be persisted."
-msgstr ""
+msgstr "O fish está sendo executado no modo privado, o histórico não será salvo."
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_job_summary.fish:1
-msgid "fish: Job %s, '%s' has stopped\\n"
-msgstr ""
+msgid "fish: Job %s, '%s' has stopped\n"
+msgstr "fish: Job %s, '%s' foi interrompido\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_job_summary.fish:2
-msgid "fish: Job %s, '%s' has ended\\n"
-msgstr ""
+msgid "fish: Job %s, '%s' has ended\n"
+msgstr "fish: Job %s, '%s' foi concluído\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_job_summary.fish:3
 msgid ""
@@ -1302,8 +1309,8 @@ msgid "fish: Job %s, '%s' terminated by signal %s (%s)\\n"
 msgstr "fish: Tarefa %s, '%s' encerrada pelo sinal %s (%s)\\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_opt.fish:1
-msgid "%s: The --short flag is required and must be a single character\\n"
-msgstr ""
+msgid "%s: The --short flag is required and must be a single character\n"
+msgstr "%s: A opção --short é necessária e deve ser um único caractere\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/fish_update_completions.fish:1
 msgid "python executable not found"
@@ -1313,157 +1320,162 @@ msgstr "executável python não encontrado"
 #: /tmp/fish.2I4NT0/explicit/share/functions/funcsave.fish:1
 #: /tmp/fish.2I4NT0/explicit/share/functions/open.fish:1
 #: /tmp/fish.2I4NT0/explicit/share/functions/realpath.fish:2
-msgid "%ls: Expected at least %d args, got only %d\\n"
-msgstr ""
+msgid "%ls: Expected at least %d args, got only %d\n"
+msgstr "%ls: Esperava pelo menos %d argumentos, recebeu apenas %d\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:3
 msgid "Editing failed or was cancelled"
-msgstr ""
+msgstr "A edição falhou ou foi cancelada"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:4
 msgid "Editor exited but the function was not modified"
-msgstr ""
+msgstr "O editor foi fechado mas a função não foi modificada"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:5
 msgid "Edit the file again? [Y/n]"
-msgstr ""
+msgstr "Editar o arquivo novamente? [S/n]"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:6
 msgid "Cancelled function editing"
-msgstr ""
+msgstr "Edição de função cancelada"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:7
 msgid ""
 "Warning: the file containing this function has not been saved. Changes may "
 "be lost when fish is closed."
 msgstr ""
+"Aviso: o arquivo contendo esta função não foi salvo. As alterações podem ser "
+"perdidas quando o fish for fechado."
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:8
 msgid "Save function to %s? [Y/n]"
-msgstr ""
+msgstr "Salvar função em %s? [S/n]"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:9
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:11
 msgid "Function saved to %s"
-msgstr ""
+msgstr "Função salva em %s"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:10
 msgid ""
 "Saving to original location failed; saving to user configuration instead."
 msgstr ""
+"O salvamento no local original falhou; salvando na configuração do usuário em vez disso."
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:12
 msgid ""
 "Saving to user configuration failed. Changes may be lost when fish is closed."
 msgstr ""
+"O salvamento na configuração do usuário falhou. As alterações podem ser perdidas quando o fish for fechado."
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funced.fish:13
 msgid "Run funcsave %s to save this function to the configuration directory."
-msgstr ""
+msgstr "Execute funcsave %s para salvar esta função no diretório de configuração."
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funcsave.fish:2
 msgid "%s: Could not create configuration directory '%s'\\n"
 msgstr "%s: Não foi possível criar o diretório de configuração '%s'\\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funcsave.fish:3
-msgid "%s: wrote %s\\n"
-msgstr ""
+msgid "%s: wrote %s\n"
+msgstr "%s: escreveu %s\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funcsave.fish:4
-msgid "%s: removed %s\\n"
-msgstr ""
+msgid "%s: removed %s\n"
+msgstr "%s: removido %s\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/funcsave.fish:5
-msgid "%s: Unknown function '%s'\\n"
-msgstr ""
+msgid "%s: Unknown function '%s'\n"
+msgstr "%s: Função desconhecida '%s'\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/help.fish:1
-msgid "%s: Could not find a web browser.\\n"
-msgstr ""
+msgid "%s: Could not find a web browser.\n"
+msgstr "%s: Não foi possível encontrar um navegador da web.\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/help.fish:3
-msgid "%s: no fish help topic '%s', try 'man %s'\\n"
-msgstr ""
+msgid "%s: no fish help topic '%s', try 'man %s'\n"
+msgstr "%s: nenhum tópico de ajuda do fish '%s', tente 'man %s'\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/help.fish:4
-msgid "help: Help is being displayed in your default browser.\\n"
-msgstr ""
+msgid "help: Help is being displayed in your default browser.\n"
+msgstr "ajuda: A ajuda está sendo exibida em seu navegador padrão.\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/help.fish:5
-msgid "help: Help is being displayed in %s.\\n"
-msgstr ""
+msgid "help: Help is being displayed in %s.\n"
+msgstr "ajuda: A ajuda está sendo exibida em %s.\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/history.fish:1
-msgid "%ls: %ls: subcommand takes no options\\n"
-msgstr ""
+msgid "%ls: %ls: subcommand takes no options\n"
+msgstr "%ls: %ls: o subcomando não tem opções\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/history.fish:2
-msgid "%ls: %ls: expected %d arguments; got %d\\n"
-msgstr ""
+msgid "%ls: %ls: expected %d arguments; got %d\n"
+msgstr "%ls: %ls: esperava %d argumentos; recebeu %d\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/history.fish:3
 msgid ""
-"If you enter 'yes' your entire interactive command history will be erased\\n"
+"If you enter 'yes' your entire interactive command history will be erased\n"
 msgstr ""
+"Se você digitar 'yes', todo o histórico de comandos interativos será apagado\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/history.fish:4
-msgid "Command history cleared!\\n"
-msgstr ""
+msgid "Command history cleared!\n"
+msgstr "Histórico de comandos apagado!\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/history.fish:5
-msgid "You did not say 'yes' so I will not clear your command history\\n"
-msgstr ""
+msgid "You did not say 'yes' so I will not clear your command history\n"
+msgstr "Você não disse 'sim', então eu não vou limpar o seu histórico de comandos\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/history.fish:6
-msgid "Command history for session cleared!\\n"
-msgstr ""
+msgid "Command history for session cleared!\n"
+msgstr "Histórico de comandos da sessão apagado!\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/isatty.fish:1
 msgid "%s: Too many arguments"
-msgstr ""
+msgstr "%s: Muitos argumentos"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/nextd.fish:1
 #: /tmp/fish.2I4NT0/explicit/share/functions/prevd.fish:1
-msgid "%s: The number of positions to skip must be a non-negative integer\\n"
-msgstr ""
+msgid "%s: The number of positions to skip must be a non-negative integer\n"
+msgstr "%s: O número de posições a serem puladas deve ser um inteiro não negativo\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/open.fish:2
-msgid "No open utility found. Try installing \"xdg-open\" or \"xdg-utils\"."
-msgstr ""
+msgid "No open utility found. Try installing "xdg-open" or "xdg-utils"."
+msgstr "Nenhuma ferramenta de abertura encontrada. Tente instalar "xdg-open" ou "xdg-utils"."
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/popd.fish:1
-msgid "%s: Directory stack is empty…\\n"
-msgstr ""
+msgid "%s: Directory stack is empty…\n"
+msgstr "%s: A pilha de diretórios está vazia...\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/psub.fish:1
 msgid "%s: Not inside of command substitution"
-msgstr ""
+msgstr "%s: Não está dentro de uma substituição de comando"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/realpath.fish:1
 msgid "%s: These flags are not allowed by fish realpath: '%s'"
-msgstr ""
+msgstr "%s: Essas flags não são permitidas pelo realpath do fish: '%s'"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/seq.fish:1
-msgid "%s: Expected 1, 2 or 3 arguments, got %d\\n"
-msgstr ""
+msgid "%s: Expected 1, 2 or 3 arguments, got %d\n"
+msgstr "%s: Esperado 1, 2 ou 3 argumentos, recebeu %d\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/seq.fish:2
-msgid "%s: '%s' is not a number\\n"
-msgstr "%s: “%s” não é um número\\n"
+msgid "%s: '%s' is not a number\n"
+msgstr "%s: '%s' não é um número\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/setenv.fish:1
 #: /tmp/fish.2I4NT0/explicit/share/functions/umask.fish:3
-msgid "%s: Too many arguments\\n"
-msgstr ""
+msgid "%s: Too many arguments\n"
+msgstr "%s: Muitos argumentos\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/setenv.fish:2
-msgid "%s: Variable name must contain alphanumeric characters\\n"
-msgstr ""
+msgid "%s: Variable name must contain alphanumeric characters\n"
+msgstr "%s: O nome da variável deve conter caracteres alfanuméricos\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/umask.fish:1
 #: /tmp/fish.2I4NT0/explicit/share/functions/umask.fish:2
 msgid "%s: Invalid mask '%s'\\n"
-msgstr ""
+msgstr "%s: Máscara inválida '%s'\\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/vared.fish:1
 msgid "%s: Unknown option %s\\n"
@@ -1472,190 +1484,195 @@ msgstr "%s: Opção desconhecida %s\\n"
 #: /tmp/fish.2I4NT0/explicit/share/functions/vared.fish:2
 msgid ""
 "%s: %s is an array variable. Use %svared%s %s[n]%s to edit the n:th element "
-"of %s\\n"
-msgstr ""
+"of %s\n"
+msgstr "%s: %s é uma variável de matriz. Use %svared%s %s[n]%s para editar o elemento n da %s\n"
 
 #: /tmp/fish.2I4NT0/explicit/share/functions/vared.fish:3
 msgid ""
-"%s: Expected exactly one argument, got %s.\\n\\nSynopsis:\\n\\t%svared%s "
-"VARIABLE\\n"
-msgstr ""
+"%s: Expected exactly one argument, got %s.\n\nSynopsis:\n\t%svared%s "
+"VARIABLE\n"
+msgstr "%s: Esperado exatamente um argumento, recebeu %s.\n\nSinopse:\n\t%svared%s "
+"VARIÁVEL\n"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:1
 msgid "Show information about supported formats"
-msgstr ""
+msgstr "Mostra informações sobre os formatos suportados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:2
 msgid "Extract with full paths"
-msgstr ""
+msgstr "Extrair com caminhos completos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:3
 msgid "Include archives"
-msgstr ""
+msgstr "Incluir arquivos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:4
 msgid "Disable archive_name field"
-msgstr ""
+msgstr "Desativar campo archive_name"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:5
 msgid "Overwrite mode"
-msgstr ""
+msgstr "Modo de sobrescrever"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:6
 msgid "Exclude archives"
-msgstr ""
+msgstr "Excluir arquivos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:7
 msgid "Set output log level"
-msgstr ""
+msgstr "Definir nível de log de saída"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:8
 msgid "Disable progress indicator"
-msgstr ""
+msgstr "Desativar indicador de progresso"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:9
 msgid "Set output stream"
-msgstr ""
+msgstr "Definir fluxo de saída"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:10
 msgid "Show execution time statistics"
-msgstr ""
+msgstr "Mostrar estatísticas de tempo de execução"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:11
 msgid "Include filenames"
-msgstr ""
+msgstr "Incluir nomes de arquivos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:12
 msgid "Set compression method"
-msgstr ""
+msgstr "Definir método de compressão"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:13
 msgid "Set output directory"
-msgstr ""
+msgstr "Definir diretório de saída"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:14
 msgid "Set password"
-msgstr ""
+msgstr "Definir senha"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:15
 msgid "Recurse subdirectories"
-msgstr ""
+msgstr "Recursão em subdiretórios"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:16
 msgid "Set archive name mode"
-msgstr ""
+msgstr "Definir modo de nome de arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:17
 msgid "Set charset for console I/O"
-msgstr ""
+msgstr "Definir conjunto de caracteres para E/S do console"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:18
 msgid "Set hash function"
-msgstr ""
+msgstr "Definir função de hash"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:19
 msgid "Set charset for list files"
-msgstr ""
+msgstr "Definir conjunto de caracteres para listagem de arquivos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:20
 msgid "Delete files after compression"
-msgstr ""
+msgstr "Excluir arquivos após compressão"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:21
 msgid "Send archive by email"
-msgstr ""
+msgstr "Enviar arquivo por e-mail"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:22
 msgid "Create SFX archive"
-msgstr ""
+msgstr "Criar arquivo SFX"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:23
 msgid "Read data from stdin"
-msgstr ""
+msgstr "Ler dados da entrada padrão"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:24
 msgid "Set large pages mode"
-msgstr ""
+msgstr "Definir modo de páginas grandes"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:25
 msgid "Show technical information"
-msgstr ""
+msgstr "Mostrar informações técnicas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:26
 msgid "Store NT security information"
-msgstr ""
+msgstr "Armazenar informações de segurança NT"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:27
 msgid "Store NTFS alternate streams"
-msgstr ""
+msgstr "Armazenar fluxos alternativos NTFS"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:28
 msgid "Store hard links"
-msgstr ""
+msgstr "Armazenar links físicos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:29
 msgid "Store symbolic links"
-msgstr ""
+msgstr "Armazenar links simbólicos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:30
 msgid "Write data to stdout"
-msgstr ""
+msgstr "Escreva dados na saída padrão"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:31
 msgid "Disable wildcard matching"
-msgstr ""
+msgstr "Desabilitar comparação com curingas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:32
 msgid "Eliminate duplication of root folder"
-msgstr ""
+msgstr "Eliminar duplicação de pasta raiz"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:33
 msgid "Use fully qualified file paths"
-msgstr ""
+msgstr "Usar caminhos de arquivo totalmente qualificados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:34
 msgid "Set sensitive case mode"
-msgstr ""
+msgstr "Definir modo sensível a maiúsculas e minúsculas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:35
 msgid "Compress shared files"
-msgstr ""
+msgstr "Comprimir arquivos compartilhados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:36
 msgid "Set archive timestamp"
-msgstr ""
+msgstr "Definir carimbo de data/hora do arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:37
 msgid "Set CPU thread affinity mask"
-msgstr ""
+msgstr "Definir máscara de afinidade de threads da CPU"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:38
 msgid "Exclude archive type"
-msgstr ""
+msgstr "Excluir tipo de arquivo compactado"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:39
 msgid "Type of archive"
 msgstr ""
 
+#: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:39
+msgid "Type of archive"
+msgstr "Tipo de arquivo"
+
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:40
 msgid "Update options"
-msgstr ""
+msgstr "Opções de atualização"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:41
 msgid "Create volumes"
-msgstr ""
+msgstr "Criar volumes"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:42
 msgid "Assign work directory"
-msgstr ""
+msgstr "Atribuir diretório de trabalho"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:43
 msgid "Exclude filenames"
-msgstr ""
+msgstr "Excluir nomes de arquivos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/7z.fish:44
 msgid "Assume yes on all queries"
-msgstr ""
+msgstr "Assumir sim para todas as perguntas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/a2disconf.fish:1
 #: /tmp/fish.2I4NT0/implicit/share/completions/a2dismod.fish:1
@@ -1664,323 +1681,323 @@ msgstr ""
 #: /tmp/fish.2I4NT0/implicit/share/completions/a2enmod.fish:1
 #: /tmp/fish.2I4NT0/implicit/share/completions/a2ensite.fish:1
 msgid "Don't show informative messages"
-msgstr ""
+msgstr "Não mostrar mensagens informativas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/a2disconf.fish:2
 #: /tmp/fish.2I4NT0/implicit/share/completions/a2dismod.fish:2
 #: /tmp/fish.2I4NT0/implicit/share/completions/a2dissite.fish:2
 msgid "Purge all traces of module"
-msgstr ""
+msgstr "Remover todos os vestígios do módulo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:1
 msgid "Add abbreviation"
-msgstr ""
+msgstr "Adicionar abreviação"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:2
 msgid "Check if an abbreviation exists"
-msgstr ""
+msgstr "Verificar se uma abreviação existe"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:3
 msgid "Rename an abbreviation"
-msgstr ""
+msgstr "Renomear uma abreviação"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:4
 msgid "Erase abbreviation"
-msgstr ""
+msgstr "Apagar abreviação"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:5
 msgid "Print all abbreviations"
-msgstr ""
+msgstr "Imprimir todas as abreviações"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:6
 msgid "Print all abbreviation names"
-msgstr ""
+msgstr "Imprimir todos os nomes de abreviações"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:7
 msgid "Expand only as a command, or anywhere"
-msgstr ""
+msgstr "Expandir apenas como comando ou em qualquer lugar"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:8
 msgid "Treat expansion argument as a fish function"
-msgstr ""
+msgstr "Tratar argumento de expansão como uma função fish"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:9
 msgid "Match a regular expression"
-msgstr ""
+msgstr "Fazer correspondência com uma expressão regular"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abbr.fish:10
 msgid "Position the cursor at % post-expansion"
-msgstr ""
+msgstr "Posicione o cursor após a expansão de %"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:1
 msgid "Complete abook formats"
-msgstr ""
+msgstr "Completar formatos do abook"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:2
 #: /tmp/fish.2I4NT0/implicit/share/completions/grub-install.fish:32
 msgid "Show usage"
-msgstr ""
+msgstr "Mostrar uso"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:3
 msgid "Use an alternative configuration file"
-msgstr ""
+msgstr "Usar um arquivo de configuração alternativo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:4
 msgid "Use an alternative addressbook file"
-msgstr ""
+msgstr "Usar um arquivo de caderno de endereços alternativo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:5
 msgid "Make a query for mutt"
-msgstr ""
+msgstr "Fazer uma consulta para mutt"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:6
 msgid "Read email message from stdin and add the sender"
-msgstr ""
+msgstr "Ler a mensagem de e-mail do stdin e adicionar o remetente"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:7
 msgid "Same as --add-email. Without confirmation"
-msgstr ""
+msgstr "Igual a --add-email. Sem confirmação"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:8
 msgid "Convert address book files"
-msgstr ""
+msgstr "Converter arquivos de caderno de endereços"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:9
 msgid "Input file format"
-msgstr ""
+msgstr "Formato do arquivo de entrada"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:10
 #: /tmp/fish.2I4NT0/implicit/share/completions/pg_dump.fish:2
 msgid "Output file format"
-msgstr ""
+msgstr "Formato do arquivo de saída"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:11
 msgid "Input file (default: stdin)"
-msgstr ""
+msgstr "Arquivo de entrada (padrão: stdin)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:12
 msgid "Output file (default: stdout)"
-msgstr ""
+msgstr "Arquivo de saída (padrão: stdout)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/abook.fish:13
 msgid "Print available formats"
-msgstr ""
+msgstr "Imprimir formatos disponíveis"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acat.fish:1
 #: /tmp/fish.2I4NT0/implicit/share/completions/als.fish:1
 #: /tmp/fish.2I4NT0/implicit/share/completions/aunpack.fish:1
 msgid "Archive content"
-msgstr ""
+msgstr "Conteúdo do arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/accept.fish:1
 #: /tmp/fish.2I4NT0/implicit/share/completions/cupsaccept.fish:1
 msgid "Accept reason"
-msgstr ""
+msgstr "Motivo de aceitação"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:1
 #: /tmp/fish.2I4NT0/implicit/share/completions/grep.fish:23
 #: /tmp/fish.2I4NT0/implicit/share/completions/sort.fish:3
 msgid "Ignore case"
-msgstr ""
+msgstr "Ignorar maiúsculas/minúsculas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:2
 msgid "Ignore case when pattern contains no uppercase"
-msgstr ""
+msgstr "Ignorar maiúsculas/minúsculas quando o padrão não contém letras maiúsculas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:3
 msgid "Don't ignore case"
-msgstr ""
+msgstr "Não ignorar maiúsculas/minúsculas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:4
 msgid "Invert match"
-msgstr ""
+msgstr "Inverter a correspondência"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:5
 msgid "Match only whole words"
-msgstr ""
+msgstr "Corresponder somente palavras inteiras"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:6
 msgid "Quote all metacharacters"
-msgstr ""
+msgstr "Colocar entre aspas todos os metacaracteres"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:7
 msgid "Only print line(s) NUM of each file"
-msgstr ""
+msgstr "Imprimir somente a linha/linhas NUM de cada arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:8
 msgid "Only print filenames containing matches"
-msgstr ""
+msgstr "Imprimir somente os nomes de arquivos que contenham correspondências"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:9
 msgid "Only print filenames with no matches"
-msgstr ""
+msgstr "Imprimir somente os nomes de arquivos que não contenham correspondências"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:10
 msgid "Output the evaluation of Perl expression for each line"
-msgstr ""
+msgstr "Imprimir a avaliação da expressão Perl para cada linha"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:11
 msgid "Output the part of line matching pattern"
-msgstr ""
+msgstr "Imprimir a parte da linha que corresponde ao padrão"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:12
 msgid "Print all lines"
-msgstr ""
+msgstr "Imprimir todas as linhas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:13
 msgid "Specify pattern explicitly"
-msgstr ""
+msgstr "Especificar o padrão explicitamente"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:14
 msgid "Stop searching in each file after NUM matches"
-msgstr ""
+msgstr "Parar a busca em cada arquivo depois de NUM correspondências"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:15
 msgid "Stop searching after first match"
-msgstr ""
+msgstr "Parar a busca após a primeira correspondência"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:16
 msgid "Print the filename for each match"
-msgstr ""
+msgstr "Imprimir o nome do arquivo para cada correspondência"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:17
 msgid "Suppress the prefixing filename on output"
-msgstr ""
+msgstr "Suprimir a colocação do nome do arquivo no início da saída"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:18
 msgid "Show number of lines matching per file"
-msgstr ""
+msgstr "Mostrar o número de linhas correspondentes em cada arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:19
 msgid "Show column number of first match"
-msgstr ""
+msgstr "Mostra o número da coluna da primeira correspondência"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:20
 msgid "Don't show column number of first match"
-msgstr ""
+msgstr "Não mostra o número da coluna da primeira correspondência"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:21
 #: /tmp/fish.2I4NT0/implicit/share/completions/grep.fish:1
 msgid "Print NUM lines of trailing context"
-msgstr ""
+msgstr "Imprime as linhas de contexto seguintes NUM"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:22
 #: /tmp/fish.2I4NT0/implicit/share/completions/grep.fish:3
 msgid "Print NUM lines of leading context"
-msgstr ""
+msgstr "Imprime as linhas de contexto anteriores NUM"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:23
 #: /tmp/fish.2I4NT0/implicit/share/completions/grep.fish:4
 msgid "Print NUM lines of context"
-msgstr ""
+msgstr "Imprime as linhas de contexto NUM"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:24
 msgid "Print null byte as separator between filenames"
-msgstr ""
+msgstr "Imprime o byte nulo como separador entre nomes de arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:25
 msgid "Suppress error messages about file errors"
-msgstr ""
+msgstr "Suprime mensagens de erro sobre erros de arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:26
 msgid "Pipes all ack output through command"
-msgstr ""
+msgstr "Encaminha todo o resultado do ack pelo comando"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:27
 msgid "Do not send output through a pager"
-msgstr ""
+msgstr "Não envia o resultado pelo paginador"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:28
 msgid "Prints a filename heading above file's results"
-msgstr ""
+msgstr "Imprime um cabeçalho com o nome do arquivo acima dos resultados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:29
 msgid "Don't print a filename heading above file's results"
-msgstr ""
+msgstr "Não imprime um cabeçalho com o nome do arquivo acima dos resultados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:30
 msgid "Print a break between results"
-msgstr ""
+msgstr "Imprimir uma quebra entre os resultados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:31
 msgid "Don't print a break between results"
-msgstr ""
+msgstr "Não imprimir uma quebra entre os resultados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:32
 msgid "Filename heading and line break between results"
-msgstr ""
+msgstr "Cabeçalho do nome do arquivo e quebra de linha entre os resultados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:33
 msgid "No filename heading and no line breaks between results"
-msgstr ""
+msgstr "Nenhum cabeçalho de nome de arquivo e sem quebra de linha entre os resultados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:34
 msgid "Highlight the matching text"
-msgstr ""
+msgstr "Destacar o texto correspondente"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:35
 msgid "Don't highlight the matching text"
-msgstr ""
+msgstr "Não destacar o texto correspondente"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:36
 msgid "Set the color for filenames"
-msgstr ""
+msgstr "Definir a cor para os nomes dos arquivos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:37
 msgid "Set the color for matches"
-msgstr ""
+msgstr "Definir a cor para as correspondências"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:38
 msgid "Set the color for line numbers"
-msgstr ""
+msgstr "Definir a cor para os números das linhas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:39
 msgid "Flush output immediately"
-msgstr ""
+msgstr "Limpar a saída imediatamente"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:40
 msgid "Only print the files selected"
-msgstr ""
+msgstr "Apenas imprimir os arquivos selecionados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:41
 msgid "Only select files matching pattern"
-msgstr ""
+msgstr "Selecionar somente arquivos correspondentes ao padrão"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:42
 msgid "Sort the found files lexically"
-msgstr ""
+msgstr "Ordenar os arquivos encontrados lexicalmente"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:43
 msgid "Show which types each file has"
-msgstr ""
+msgstr "Mostrar quais tipos de arquivo cada arquivo possui"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:44
 msgid "Read the list of files to search from file"
-msgstr ""
+msgstr "Ler a lista de arquivos para procurar em um arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:45
 msgid "Read the list of files to search from STDIN"
-msgstr ""
+msgstr "Ler a lista de arquivos para procurar da entrada padrão"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:46
 msgid "Ignore directory"
-msgstr ""
+msgstr "Ignorar diretório"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:47
 msgid "Don't ignore directory"
-msgstr ""
+msgstr "Não ignorar diretório"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:48
 msgid "Add filter for ignoring files"
-msgstr ""
+msgstr "Adicionar filtro para ignorar arquivos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:49
 msgid "Recurse into subdirectories"
-msgstr ""
+msgstr "Recursivamente entrar em subdiretórios"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:50
 msgid "No descending into subdirectories"
-msgstr ""
+msgstr "Não entrar em subdiretórios"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:51
 #: /tmp/fish.2I4NT0/implicit/share/completions/file.fish:9
@@ -1998,137 +2015,137 @@ msgstr "Não segue links simbólicos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:53
 msgid "Include only recognized files"
-msgstr ""
+msgstr "Incluir apenas arquivos reconhecidos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:54
 msgid "Include only X files"
-msgstr ""
+msgstr "Incluir apenas X arquivos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:55
 msgid "Replaces definition of type"
-msgstr ""
+msgstr "Substitui a definição do tipo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:56
 msgid "Specify definition of type"
-msgstr ""
+msgstr "Especificar a definição do tipo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:57
 msgid "Removes all filters associated with type"
-msgstr ""
+msgstr "Remove todos os filtros associados ao tipo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:58
 msgid "Ignores environment variables and ackrc files"
-msgstr ""
+msgstr "Ignora variáveis de ambiente e arquivos ackrc"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:59
 msgid "Specifies location of ackrc file"
-msgstr ""
+msgstr "Especifica o local do arquivo ackrc"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:60
 msgid "Ignore default definitions ack includes"
-msgstr ""
+msgstr "Ignora as definições padrões que o ack inclui"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:61
 msgid "Outputs default ackrc"
-msgstr ""
+msgstr "Saída padrão do arquivo ackrc"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:62
 #: /tmp/fish.2I4NT0/implicit/share/completions/udisksctl.fish:1
 #: /tmp/fish.2I4NT0/implicit/share/completions/udisksctl.fish:2
 msgid "Shows help"
-msgstr ""
+msgstr "Mostra ajuda"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:63
 msgid "Shows all known types"
-msgstr ""
+msgstr "Mostra todos os tipos conhecidos"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:64
 msgid "Dump information on which options are loaded"
-msgstr ""
+msgstr "Despeja informações sobre quais opções estão carregadas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:65
 msgid "Forces ack to treat input as a pipe"
-msgstr ""
+msgstr "Força o ack a tratar a entrada como um pipe"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:66
 msgid "Forces ack to treat input as tty"
-msgstr ""
+msgstr "Força o ack a tratar a entrada como tty"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:67
 msgid "Shows man page"
-msgstr ""
+msgstr "Mostra a página do manual"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:68
 msgid "Displays version and copyright"
-msgstr ""
+msgstr "Mostra a versão e direitos autorais"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:69
 msgid "Bill the Cat"
-msgstr ""
+msgstr "Bill the Cat"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:70
 msgid "The warning admiral"
-msgstr ""
+msgstr "O almirante do aviso"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:71
-msgid "Allow  file type"
-msgstr ""
+msgid "Allow file type"
+msgstr "Permite tipo de arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/ack.fish:72
-msgid "Don't allow  file type"
-msgstr ""
+msgid "Don't allow file type"
+msgstr "Não permite tipo de arquivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:1
 msgid "Show battery information"
-msgstr ""
+msgstr "Mostra informações da bateria"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:2
 msgid "Suppress battery information"
-msgstr ""
+msgstr "Suprime informações da bateria"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:3
 msgid "Show thermal information"
-msgstr ""
+msgstr "Mostra informações térmicas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:4
 msgid "Suppress thermal information"
-msgstr ""
+msgstr "Suprime informações térmicas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:5
 msgid "Show ac adapter information"
-msgstr ""
+msgstr "Mostra informações do adaptador AC"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:6
 msgid "Suppress ac-adapter information"
-msgstr ""
+msgstr "Suprime informações do adaptador AC"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:7
 msgid "Show every device, overrides above options"
-msgstr ""
+msgstr "Mostra todos os dispositivos, substitui as opções acima"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:8
 msgid "Show non-operational devices"
-msgstr ""
+msgstr "Mostra dispositivos não operacionais"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:9
 msgid "Hide non-operational devices"
-msgstr ""
+msgstr "Oculta dispositivos não operacionais"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:10
 msgid "Use celsius as the temperature unit"
-msgstr ""
+msgstr "Use Celsius como unidade de temperatura"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:11
 msgid "Use fahrenheit as the temperature unit"
-msgstr ""
+msgstr "Use Fahrenheit como unidade de temperatura"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:12
 msgid "Use kelvin as the temperature unit"
-msgstr ""
+msgstr "Use Kelvin como unidade de temperatura"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:13
 msgid "<dir> path to ACPI info (/proc/acpi)"
-msgstr ""
+msgstr "<dir> caminho para informações ACPI (/proc/acpi)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:14
 #: /tmp/fish.2I4NT0/implicit/share/completions/and.fish:1
@@ -2283,7 +2300,7 @@ msgstr ""
 #: /tmp/fish.2I4NT0/implicit/share/completions/zip.fish:29
 #: /tmp/fish.2I4NT0/implicit/share/functions/__fish_complete_gpg.fish:116
 msgid "Display help and exit"
-msgstr ""
+msgstr "Exibir ajuda e sair"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/acpi.fish:15
 #: /tmp/fish.2I4NT0/implicit/share/completions/ln.fish:16
@@ -2295,331 +2312,331 @@ msgstr ""
 #: /tmp/fish.2I4NT0/implicit/share/completions/watch.fish:12
 #: /tmp/fish.2I4NT0/implicit/share/completions/xgettext.fish:39
 msgid "Output version information and exit"
-msgstr ""
+msgstr "Exibir informações de versão e sair"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:1
 msgid "Test if adb has yet to be given the subcommand"
-msgstr ""
+msgstr "Testar se o adb ainda não recebeu a subcomando"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:2
 msgid "Run adb devices and parse output"
-msgstr ""
+msgstr "Executar adb devices e analisar a saída"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:3
 msgid "Get list of devices connected via TCP/IP"
-msgstr ""
+msgstr "Obter lista de dispositivos conectados via TCP/IP"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:4
 msgid "Runs adb with any -s parameters already given on the command line"
-msgstr ""
+msgstr "Executa adb com quaisquer parâmetros -s já fornecidos na linha de comando"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:5
 msgid "Listen on all network interfaces"
-msgstr ""
+msgstr "Ouvir em todas as interfaces de rede"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:6
 msgid "Use first USB device"
-msgstr ""
+msgstr "Usar primeiro dispositivo USB"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:7
 msgid "Use first TCP/IP device"
-msgstr ""
+msgstr "Usar primeiro dispositivo TCP/IP"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:8
 msgid "Use device with given serial"
-msgstr ""
+msgstr "Usar dispositivo com serial fornecido"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:9
 msgid "Use device with given transport id"
-msgstr ""
+msgstr "Use o dispositivo com o ID de transporte fornecido"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:10
 msgid "Name of adb server host"
-msgstr ""
+msgstr "Nome do host do servidor adb"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:11
 msgid "Port of adb server"
-msgstr ""
+msgstr "Porta do servidor adb"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:12
 msgid "Listen on given socket for adb server"
-msgstr ""
+msgstr "Ouça no soquete fornecido para o servidor adb"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:13
 msgid "Connect to device"
-msgstr ""
+msgstr "Conectar ao dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:14
 msgid "Disconnect from device"
-msgstr ""
+msgstr "Desconectar do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:15
 msgid "List all connected devices"
-msgstr ""
+msgstr "Listar todos os dispositivos conectados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:16
 msgid "Copy file to device"
-msgstr ""
+msgstr "Copiar arquivo para o dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:17
 msgid "Copy file from device"
-msgstr ""
+msgstr "Copiar arquivo do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:18
 msgid "Copy host->device only if changed"
-msgstr ""
+msgstr "Copiar do host para o dispositivo somente se alterado"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:19
 msgid "Run remote shell [command]"
-msgstr ""
+msgstr "Executar o shell remoto [comando]"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:20
 msgid "Run emulator console command"
-msgstr ""
+msgstr "Executar comando de console do emulador"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:21
 msgid "View device log"
-msgstr ""
+msgstr "Visualizar log do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:22
 #: /tmp/fish.2I4NT0/implicit/share/completions/dnf.fish:44
 msgid "Install package"
-msgstr ""
+msgstr "Instalar pacote"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:23
 msgid "Uninstall package"
-msgstr ""
+msgstr "Desinstalar pacote"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:24
 msgid "List PIDs of processes hosting a JDWP transport"
-msgstr ""
+msgstr "Listar PIDs dos processos que hospedam um transporte JDWP"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:25
 msgid "Port forwarding"
-msgstr ""
+msgstr "Encaminhamento de porta"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:26
 msgid "Return bugreport information"
-msgstr ""
+msgstr "Retornar informações do relatório de erros"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:27
 msgid "Perform device backup"
-msgstr ""
+msgstr "Realizar backup do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:28
 msgid "Restore device from backup"
-msgstr ""
+msgstr "Restaurar dispositivo a partir do backup"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:29
 msgid "Show adb version"
-msgstr ""
+msgstr "Mostrar a versão do adb"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:30
 msgid "Show adb help"
-msgstr ""
+msgstr "Mostrar a ajuda do adb"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:31
 msgid "Block until device is online"
-msgstr ""
+msgstr "Bloquear até que o dispositivo esteja online"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:32
 msgid "Ensure that there is a server running"
-msgstr ""
+msgstr "Garantir que um servidor esteja em execução"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:33
 msgid "Kill the server if it is running"
-msgstr ""
+msgstr "Encerrar o servidor se estiver em execução"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:34
 msgid "Remounts the /system partition on the device read-write"
-msgstr ""
+msgstr "Remonta a partição /system do dispositivo como leitura-gravação"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:35
 msgid "Reboots the device, optionally into the bootloader or recovery program"
-msgstr ""
+msgstr "Reinicia o dispositivo, opcionalmente no bootloader ou programa de recuperação"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:36
 msgid "Prints state of the device"
-msgstr ""
+msgstr "Imprime o estado do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:37
 msgid "Prints serial number of the device"
-msgstr ""
+msgstr "Imprime o número de série do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:38
 msgid "Prints device path"
-msgstr ""
+msgstr "Imprime o caminho do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:39
 msgid "Continuously print the device status"
-msgstr ""
+msgstr "Imprime continuamente o status do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:40
 msgid "Restart the adbd daemon with root permissions"
-msgstr ""
+msgstr "Reinicia o daemon adbd com permissões de root"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:41
 msgid "Restart the adbd daemon without root permissions"
-msgstr ""
+msgstr "Reinicia o daemon adbd sem permissões de root"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:42
 msgid "Restart the adbd daemon listening on USB"
-msgstr ""
+msgstr "Reinicia o daemon adbd escutando na USB"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:43
 msgid "Restart the adbd daemon listening on TCP"
-msgstr ""
+msgstr "Reinicia o daemon adbd escutando na TCP"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:44
 msgid "Run PPP over USB"
-msgstr ""
+msgstr "Executa PPP sobre USB"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:45
 msgid "Sideloads the given package"
-msgstr ""
+msgstr "Carrega o pacote fornecido"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:46
 msgid "Kick current connection from host side and make it reconnect."
-msgstr ""
+msgstr "Interrompe a conexão atual do lado do host e a faz reconectar."
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:47
 msgid "Execute a command on the device and send its stdout back"
-msgstr ""
+msgstr "Executa um comando no dispositivo e envia seu stdout de volta"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:48
 msgid "Forward-lock the app"
-msgstr ""
+msgstr "Bloqueia o aplicativo para frente"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:49
 msgid "Reinstall the app keeping its data"
-msgstr ""
+msgstr "Reinstala o aplicativo mantendo seus dados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:50
 msgid "Install on SD card instead of internal storage"
-msgstr ""
+msgstr "Instala no cartão SD em vez do armazenamento interno"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:51
 msgid "Algorithm name"
-msgstr ""
+msgstr "Nome do algoritmo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:52
 msgid "Hex-encoded key"
-msgstr ""
+msgstr "Chave codificada em hexadecimal"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:53
 msgid "Hex-encoded iv"
-msgstr ""
+msgstr "IV codificado em hexadecimal"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:54
 msgid "Keep the data and cache directories"
-msgstr ""
+msgstr "Manter os diretórios de dados e cache"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:55
 msgid "Also list device qualifiers"
-msgstr ""
+msgstr "Também listar os qualificadores do dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:56
 msgid "Device to disconnect"
-msgstr ""
+msgstr "Dispositivo para desconectar"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:57
 msgid "File to write backup data to"
-msgstr ""
+msgstr "Arquivo para escrever dados de backup"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:58
 msgid "Enable backup of the .apks themselves"
-msgstr ""
+msgstr "Habilitar backup dos próprios .apks"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:59
 msgid "Disable backup of the .apks themselves (default)"
-msgstr ""
+msgstr "Desabilitar backup dos próprios .apks (padrão)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:60
 msgid "Enable backup of any installed apk expansion"
-msgstr ""
+msgstr "Habilitar backup de qualquer expansão de apk instalada"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:61
 msgid "Disable backup of any installed apk expansion (default)"
-msgstr ""
+msgstr "Desabilitar backup de qualquer expansão de apk instalada (padrão)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:62
 msgid "Enable backup of the device's shared storage / SD card contents"
-msgstr ""
+msgstr "Habilitar backup do conteúdo do armazenamento compartilhado do dispositivo / cartão SD"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:63
 msgid ""
 "Disable backup of the device's shared storage / SD card contents (default)"
-msgstr ""
+msgstr "Desabilitar backup do conteúdo do armazenamento compartilhado do dispositivo / cartão SD (padrão)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:64
 msgid "Back up all installed applications"
-msgstr ""
+msgstr "Fazer backup de todos os aplicativos instalados"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:65
 msgid "Include system applications in -all (default)"
-msgstr ""
+msgstr "Incluir aplicativos do sistema em -all (padrão)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:66
 msgid "Exclude system applications in -all"
-msgstr ""
+msgstr "Excluir aplicativos do sistema em -all"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:67
 msgid "Package(s) to backup"
-msgstr ""
+msgstr "Pacote(s) para backup"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:68
 msgid "List all forward socket connections"
-msgstr ""
+msgstr "Listar todas as conexões de soquete encaminhadas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:69
 msgid "Fails the forward if local is already forwarded"
-msgstr ""
+msgstr "Falha o encaminhamento se a porta local já foi encaminhada"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:70
 msgid "Remove a specific forward socket connection"
-msgstr ""
+msgstr "Remover uma conexão de soquete encaminhada específica"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:71
 msgid "Remove all forward socket connections"
-msgstr ""
+msgstr "Remover todas as conexões de soquete encaminhadas"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:72
 msgid "Kick current connection from device side and make it reconnect."
-msgstr ""
+msgstr "Desconectar a conexão atual do lado do dispositivo e reconectar"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:73
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:74
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:75
 msgid "File on device"
-msgstr ""
+msgstr "Arquivo no dispositivo"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:76
 msgid "Dump logs from prior to last reboot from pstore"
-msgstr ""
+msgstr "Exibir logs anteriores à última reinicialização a partir do pstore"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:77
 msgid " Request alternate ring buffer(s)"
-msgstr ""
+msgstr "Solicitar buffer(s) de anel alternativo(s)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:78
 msgid "Clear (flush) the entire log and exit"
-msgstr ""
+msgstr "Limpar (descarregar) o log inteiro e sair"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:79
 msgid "Dump the log and then exit (don't block)"
-msgstr ""
+msgstr "Exibir o log e sair (não bloquear)"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:80
 msgid "Only print the logs for the given PID"
-msgstr ""
+msgstr "Exibir somente os logs para o PID fornecido"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:81
 msgid "Sleep for 2 hours or when buffer about to wrap whichever comes first"
-msgstr ""
+msgstr "Dormir por 2 horas ou quando o buffer estiver prestes a se esgotar, o que ocorrer primeiro"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:82
 msgid "Sets log print format verb and adverbs"
-msgstr ""
+msgstr "Define o verbo e os advérbios do formato de impressão do log"
 
 #: /tmp/fish.2I4NT0/implicit/share/completions/adb.fish:83
 msgid "Print dividers between each log buffer"
